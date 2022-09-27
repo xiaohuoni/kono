@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/xiaohuoni/kono#readme",
+  "bugs": {
+    "url": "https://github.com/xiaohuoni/kono/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaohuoni/kono.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "kono-scripts bootstrap",
+    "format": "prettier --cache --write ."
+  },
+  "devDependencies": {
+    "father": "^4.0.5",
+    "konos": "workspace:*",
+    "prettier": "^2.7.1",
+    "prettier-plugin-organize-imports": "^2.3.4",
+    "prettier-plugin-packagejson": "^2.2.18",
+    "tsx": "^3.8.0",
+    "zx": "^7.0.8"
+  },
+  "packageManager": "pnpm@7.3.0"
+}

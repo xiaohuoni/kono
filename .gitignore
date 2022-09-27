@@ -1,0 +1,11 @@
+/node_modules
+/.umi
+/.mfsu
+/.umi-production
+/dist
+.DS_Store
+.turbo
+*.tsbuildinfo
+.jest-cache
+.swc
+.vscode

@@ -1,0 +1,11 @@
+{
+  "name": "konos",
+  "version": "0.0.1",
+  "bin": {
+    "konos": "bin/kono-scripts.js"
+  },
+  "dependencies": {
+    "@umijs/core": "^4.0.12",
+    "@umijs/utils": "^4.0.12"
+  }
+}

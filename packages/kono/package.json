@@ -1,0 +1,28 @@
+{
+  "name": "kono",
+  "version": "0.0.0",
+  "description": "kono",
+  "homepage": "https://github.com/xiaohuoni/kono/tree/master/packages/kono#readme",
+  "bugs": "https://github.com/xiaohuoni/kono/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaohuoni/kono"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pnpm tsc",
+    "build:deps": "kono-scripts bundleDeps",
+    "dev": "pnpm build --watch"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "xiaohuoni <xiaohuoni@gmail.com> (https://github.com/xiaohuoni)"
+  ]
+}
