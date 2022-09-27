@@ -11,7 +11,11 @@ export class Service extends CoreService {
       cwd,
       defaultConfigFiles: DEFAULT_CONFIG_FILES || opts.defaultConfigFiles,
       frameworkName: FRAMEWORK_NAME || process.env.FRAMEWORK_NAME,
-      presets: [require.resolve('../preset'), ...(opts?.presets || [])],
+      presets: [
+        require.resolve('../preset'),
+        process.env.KONO_PRESET,
+        ...(opts?.presets || []),
+      ].filter(Boolean),
     });
   }
 

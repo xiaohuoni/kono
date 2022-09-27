@@ -2,7 +2,12 @@
   "name": "konos",
   "version": "0.0.1",
   "bin": {
-    "konos": "bin/kono-scripts.js"
+    "kono-scripts": "bin/kono-scripts.js",
+    "konos": "bin/konos.js"
+  },
+  "scripts": {
+    "build": "father build",
+    "dev": "father build -w"
   },
   "dependencies": {
     "@umijs/core": "^4.0.12",
