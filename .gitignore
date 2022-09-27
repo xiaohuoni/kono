@@ -1,4 +1,4 @@
-/node_modules
+node_modules
 /.umi
 /.mfsu
 /.umi-production
@@ -9,3 +9,4 @@
 .jest-cache
 .swc
 .vscode
+dist

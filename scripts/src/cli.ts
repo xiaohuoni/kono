@@ -20,7 +20,6 @@ export async function run() {
     },
     boolean: ['version'],
   });
-  console.log('args', process.argv);
   try {
     await new Service().run2({
       name: args._[0],

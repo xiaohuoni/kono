@@ -10,14 +10,6 @@ export default (api: IApi) => {
       // commands
       require.resolve('./commands/help'),
       require.resolve('./commands/init'),
-      require.resolve('./commands/bootstrap'),
-
-      // inits
-      require.resolve('./inits/package'),
-
-      // generators
-      require.resolve('./generators/prettier'),
-      require.resolve('./generators/tsconfig'),
     ].filter(Boolean),
   };
 };
