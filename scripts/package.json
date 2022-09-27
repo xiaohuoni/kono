@@ -1,6 +1,6 @@
 {
   "name": "konos",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "bin": {
     "kono-scripts": "bin/kono-scripts.js",
     "konos": "bin/konos.js"

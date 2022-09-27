@@ -5,7 +5,7 @@ const { sync } = require('@umijs/utils/compiled/cross-spawn');
 const chalk = require('@umijs/utils/compiled/chalk').default;
 const argv = process.argv.slice(2);
 
-process.env.KONO_PRESET = join(__dirname, `../src/localpreset`);
+process.env.KONO_PRESETS = join(__dirname, `../src/localpreset`);
 
 const spawn = sync(
   'tsx',
