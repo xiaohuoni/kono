@@ -101,7 +101,11 @@ ${process.env.FRAMEWORK_NAME || 'kono'} init
           message: 'Pick init type',
           choices: questions,
         });
-        await runGenerator(api.appData.inits[gType]);
+        if (gType) {
+          await runGenerator(api.appData.inits[gType]);
+        } else {
+          logger.info('用户取消操作');
+        }
       }
     },
   });

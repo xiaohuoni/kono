@@ -1,9 +1,24 @@
 {
   "name": "konos",
-  "version": "0.0.3",
+  "version": "0.0.6",
+  "main": "dist/index.js",
+  "types": "index.d.ts",
   "bin": {
     "kono-scripts": "bin/kono-scripts.js",
     "konos": "bin/konos.js"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "index.d.ts"
+  ],
+  "homepage": "https://github.com/xiaohuoni/kono#readme",
+  "bugs": {
+    "url": "https://github.com/xiaohuoni/kono/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaohuoni/kono.git"
   },
   "scripts": {
     "build": "father build",

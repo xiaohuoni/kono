@@ -5,20 +5,35 @@ importers:
   .:
     specifiers:
       father: ^4.0.5
-      kono-scripts: workspace:*
+      konos: workspace:*
       prettier: ^2.7.1
       prettier-plugin-organize-imports: ^2.3.4
       prettier-plugin-packagejson: ^2.2.18
-      tsx: ^3.8.0
+      tsx: ^3.9.0
       zx: ^7.0.8
     devDependencies:
       father: 4.0.5
-      kono-scripts: link:scripts
+      konos: link:scripts
       prettier: 2.7.1
       prettier-plugin-organize-imports: 2.3.4_prettier@2.7.1
       prettier-plugin-packagejson: 2.2.18_prettier@2.7.1
       tsx: 3.9.0
       zx: 7.0.8
+
+  packages/kono:
+    specifiers:
+      '@types/events': ^3.0.0
+      '@types/lodash.isequal': ^4.5.6
+      events: ^3.3.0
+      lodash.isequal: ^4.5.0
+      proxy-compare: ^2.3.0
+    dependencies:
+      events: 3.3.0
+      lodash.isequal: 4.5.0
+      proxy-compare: 2.3.0
+    devDependencies:
+      '@types/events': 3.0.0
+      '@types/lodash.isequal': 4.5.6
 
   scripts:
     specifiers:
@@ -796,6 +811,10 @@ packages:
     resolution: {integrity: sha512-ebDJ9b0e702Yr7pWgB0jzm+CX4Srzz8RcXtLJDJB+BSccqMa36uyH/zUsSYao5+BD1ytv3k3rPYCq4mAE1hsXA==}
     dev: true
 
+  /@types/events/3.0.0:
+    resolution: {integrity: sha512-EaObqwIvayI5a8dCzhFrjKzVwKLxjoG9T6Ppd5CEo07LRKfQ8Yokw54r5+Wq7FaBQ+yXRvQAYPrHwya1/UFt9g==}
+    dev: true
+
   /@types/fs-extra/9.0.13:
     resolution: {integrity: sha512-nEnwB++1u5lVDM2UI4c1+5R+FYaKfaAzS4OococimjVm3nQw3TuzH5UNsocrcTBbhnerblyHj4A49qXbIiZdpA==}
     dependencies:
@@ -815,6 +834,16 @@ packages:
 
   /@types/json-schema/7.0.11:
     resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
+    dev: true
+
+  /@types/lodash.isequal/4.5.6:
+    resolution: {integrity: sha512-Ww4UGSe3DmtvLLJm2F16hDwEQSv7U0Rr8SujLUA2wHI2D2dm8kPu6Et+/y303LfjTIwSBKXB/YTUcAKpem/XEg==}
+    dependencies:
+      '@types/lodash': 4.14.186
+    dev: true
+
+  /@types/lodash/4.14.186:
+    resolution: {integrity: sha512-eHcVlLXP0c2FlMPm56ITode2AgLMSa6aJ05JTTbYbI+7EMkCEE5qk2E41d5g2lCVTqRe0GnnRFurmlCsDODrPw==}
     dev: true
 
   /@types/minimatch/5.1.2:
@@ -2146,7 +2175,6 @@ packages:
   /events/3.3.0:
     resolution: {integrity: sha512-mQw+2fkQbALzQ7V0MY0IqdnXNOeTtP4r0lN9z7AAawCXgqea7bDii20AYrIBrFd/Hx0M2Ocz6S111CaFkUcb0Q==}
     engines: {node: '>=0.8.x'}
-    dev: true
 
   /evp_bytestokey/1.0.3:
     resolution: {integrity: sha512-/f2Go4TognH/KvCISP7OUsHn85hT9nUkxxA9BEWxFn+Oj9o8ZNLm/40hdlgSLyuOimsrTKLUMEorQexp/aPQeA==}
@@ -2887,7 +2915,6 @@ packages:
 
   /lodash.isequal/4.5.0:
     resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
-    dev: true
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
@@ -3666,6 +3693,10 @@ packages:
     resolution: {integrity: sha512-cdGef/drWFoydD1JsMzuFf8100nZl+GT+yacc2bEced5f9Rjk4z+WtFUTBu9PhOi9j/jfmBPu0mMEY4wIdAF8A==}
     engines: {node: '>= 0.6.0'}
     dev: true
+
+  /proxy-compare/2.3.0:
+    resolution: {integrity: sha512-c3L2CcAi7f7pvlD0D7xsF+2CQIW8C3HaYx2Pfgq8eA4HAl3GAH6/dVYsyBbYF/0XJs2ziGLrzmz5fmzPm6A0pQ==}
+    dev: false
 
   /ps-tree/1.2.0:
     resolution: {integrity: sha512-0VnamPPYHl4uaU/nSFeZZpR21QAWRz+sRv4iW9+v/GS/J5U5iZB5BNN6J0RMoOvdx2gWM2+ZFMIm58q24e4UYA==}
