@@ -71,7 +71,6 @@ export function spawnSync(cmd: string, opts: SpawnSyncOptions) {
   });
   if (result.status !== 0) {
     logger.error(`Execute command error (${cmd})`);
-    process.exit(1);
   }
   return result;
 }
