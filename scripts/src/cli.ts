@@ -27,9 +27,6 @@ export async function run() {
     });
   } catch (e: any) {
     console.log(e);
-    console.log(
-      '如果是‘.mjs’错误，你可以尝试删除 `node_modules/.pnpm/@umijs+core@4.0.22/node_modules/@umijs/core/dist/service/plugin.js#59` 的 ‘.mjs’ 配置',
-    );
     printHelp.exit();
     process.exit(1);
   }
