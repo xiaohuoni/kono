@@ -10,6 +10,7 @@ export default (api: IApi) => {
       // commands
       require.resolve('./commands/help'),
       require.resolve('./commands/init'),
+      require.resolve('./inits/cli'),
     ].filter(Boolean),
   };
 };
