@@ -8,8 +8,8 @@ export default (api: IApi) => {
 
   api.registerInit({
     key: 'config',
-    name: 'lingfeng config',
-    description: '初始化 lingfeng Config',
+    name: '{{{ name }}} config',
+    description: '初始化 {{{ name }}} Config',
     template: join(__dirname, '..', '..', 'templates', 'config'),
     type: 'init' as InitType.init,
   });

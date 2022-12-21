@@ -3,7 +3,7 @@ import { getSchemas } from './schema';
 
 export default (api: IApi) => {
   api.describe({
-    key: 'lingfeng:config',
+    key: '{{{ name }}}:config',
   });
   const extraSchemas = getSchemas();
 
@@ -13,7 +13,7 @@ export default (api: IApi) => {
     };
     api.registerPlugins([
       {
-        id: `lingfeng: config-${key}`,
+        id: `{{{ name }}}: config-${key}`,
         key: key,
         config,
       },

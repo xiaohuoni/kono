@@ -3,7 +3,7 @@ import { IApi } from 'konos';
 
 export default (api: IApi) => {
   api.onStart(() => {
-    logger.ready('welcome to lingfeng!');
+    logger.ready('welcome to {{{ name }}}!');
   });
   return {
     plugins: [
